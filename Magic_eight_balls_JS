@@ -1,0 +1,50 @@
+let userName = "";
+
+//Je créer une variable servant à l'utilisateur d'entréer son nom
+
+userName ? console.log(`Hello ${userName}`) : console.log('Hello ! ');
+
+// Cette fonction détermine si la variable précédente est vrai et renvoie une réponse les cas.
+
+let userQuestion = "vais-je reussir?";
+
+console.log(`Voici votre question ${userName}, ${userQuestion}`);
+
+// La variable permet à l'utilisateur de poser sa question puis imprimera la question et le nom de l'utilisateur. 
+
+let randomNumber = Math.floor(Math.random()*8);
+
+//Grace a cette variable, on va pouvoir générer un nombre aléatoire entre 1 et 8. Puis avec Math.floor sera arrondi. 
+
+let eightBall = randomNumber;
+
+//Nous assignons à cette variable la valeur obtenu précédemment. 
+
+switch(eightBall) {
+  case 0 : console.log("Crois en toi"); 
+  break;
+  case 1 : console.log("c'est certain"); 
+  break; 
+  case 2 : console.log("c'est decide"); 
+  break; 
+  case 3 : console.log("Reponse assez flou..."); 
+  break; 
+  case 4 : console.log('Ne peux pas predire maintenant'); 
+  break; 
+  case 5 : console.log("Ne compte pas dessus"); 
+  break; 
+  case 6 : console.log("Mes sources me disent non"); 
+  break; 
+  case 7 : console.log("Les astres ne sont pas bon"); 
+  break; 
+  case 8 : console.log("Les signes indique que oui"); 
+  break; 
+  default : console.log("Desole...Ma vision est trop obscure...Je ne peux rien dire pour l'heure"); 
+  break; 
+}; 
+
+console.log(eightBall)
+// Grace à la fonction switch, nous avons listé tout les cas possible de nombre et personnalisé un message que nous imprimonds avec un console.log
+
+
+
